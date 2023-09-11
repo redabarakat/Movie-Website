@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useSelector } from "react-redux";
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
-import Img from "../../../components/lazyLoadImage/img";
+import Img from "../../../components/lazyLoadImage/Img";
 import Avater from "../../../assets/avatar.png";
 import "./cast.scss";
 
