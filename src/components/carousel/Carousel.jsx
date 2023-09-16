@@ -22,8 +22,6 @@ const Carousel = ({ data, loading, endpoint, title }) => {
   const navigation = (dir) => {
     const container = carouselContainer.current;
 
-    console.log("scrollLeft", container.scrollLeft);
-
     const scrollAmount =
       dir === "left"
         ? container.scrollLeft - (container.offsetWidth + 20)
@@ -50,7 +48,7 @@ const Carousel = ({ data, loading, endpoint, title }) => {
   return (
     <div className="carousel ">
       <ContentWrapper>
-        {title && <div className="carouseTitle">{title}</div>}
+        {title && <div className="carouselTitle">{title}</div>}
         <BsFillArrowLeftCircleFill
           className="carouselLeftNav arrow"
           onClick={() => navigation("left")}
